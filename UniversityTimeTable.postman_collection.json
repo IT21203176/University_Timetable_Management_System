@@ -1,0 +1,732 @@
+{
+	"info": {
+		"_postman_id": "b4893bcc-2509-438a-8c40-4db7ceae47ff",
+		"name": "UniversityTimeTable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32391182"
+	},
+	"item": [
+		{
+			"name": "localhost:4000/api/auth/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyMDU5MzAsImV4cCI6MTcxMTIwOTUzMH0.n4lv2z0l5A6YAKeEkqWOkwWQM5ndTAsrcwfjJs2eNcM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Yelani Budara\",\r\n  \"email\": \"yelaniB@gmail.com\",\r\n  \"mobileNo\": \"0775678024\",\r\n  \"universityId\": \"IT21098590\",\r\n  \"facultyDepartment\": [\r\n        {\r\n            \"fac\": \"Computing\",\r\n            \"department\": \"SE\"\r\n        }\r\n   ],\r\n  \"program\": \"BSc (Hons) in Information Technology Specialising in Information Technology\",\r\n  \"password\": \"Yelani123\",\r\n  \"role\": \"Student\",\r\n  \"year\": 1,\r\n  \"semester\": 1,\r\n  \"dayType\": \"WD\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"surenTest@gmail.com\",\r\n  \"password\": \"Js051700\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/auth/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/auth/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/auth/role/Student",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/auth/role/Student/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"role",
+						"Student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/auth/65fdb3e29ac7bbb77565f8a8",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/auth/65feef4fa04ce301223c9277",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"65feef4fa04ce301223c9277"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/courses/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mobile Application Development\",\r\n    \"code\": \"IT2010\",\r\n    \"description\": \"Mobile Application Development\",\r\n    \"program\": \"BSc (Hons) in Information Technology Specialising in Information Technology\",\r\n    \"year\": 2,\r\n    \"semester\": 2,\r\n    \"credits\": 4,\r\n    \"faculty\": [\"65f96fc27b0c3964bee32fb5\"],\r\n    \"facultyDepartment\": [\"65fbc62fe9e2b8f403d7dbd2\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/courses/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/courses/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mobile Application Development\",\r\n    \"code\": \"IT2010\",\r\n    \"description\": \"Mobile Application Development\",\r\n    \"program\": \"BSc (Hons) in Information Technology Specialising in Information Technology\",\r\n    \"year\": 2,\r\n    \"semester\": 2,\r\n    \"credits\": 4,\r\n    \"faculty\": [\"65f96fc27b0c3964bee32fb5\", \"65feef90a04ce301223c927c\"],\r\n    \"facultyDepartment\": [\"65fbc62fe9e2b8f403d7dbd2\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/courses/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"courses",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/courses/65f9c7f5fd8a20e77fb1e90e/add-faculty/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"facultyIds\": [\"65feef90a04ce301223c927c\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/courses/65fff0b16c94b1fda5d8526c/add-faculty/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"courses",
+						"65fff0b16c94b1fda5d8526c",
+						"add-faculty",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/courses/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mobile Application Development\",\r\n    \"code\": \"IT2010\",\r\n    \"description\": \"Mobile Application Development\",\r\n    \"program\": \"BSc(Hons) in Information Technology Specialising in Information Technology\",\r\n    \"year\": 2,\r\n    \"semester\": 2,\r\n    \"credits\": 4,\r\n    \"faculty\": [\"65f96fc27b0c3964bee32fb5\", \"65feef90a04ce301223c927c\"],\r\n    \"facultyDepartment\": [\"65fbc62fe9e2b8f403d7dbd2\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/courses/65fff0b16c94b1fda5d8526c",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"courses",
+						"65fff0b16c94b1fda5d8526c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/courses/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/courses/65fff0b16c94b1fda5d8526c",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"courses",
+						"65fff0b16c94b1fda5d8526c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/timetableSessions/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"year\": 1,\r\n  \"semester\": 1,\r\n  \"program\": \"BSc (Hons) in Information Technology Specialising in Cuber Security\",\r\n  \"facultyDepartment\": [\"65fbc62fe9e2b8f403d7dbd2\"],\r\n  \"groupId\": \"Y1.S2.WE.CS.1\",\r\n  \"type\": \"Weekend\",\r\n  \"days\": [\r\n    {\r\n      \"day\": \"Saturday\",\r\n      \"sessions\": [\r\n        {\r\n          \"course\": \"65f9c7f5fd8a20e77fb1e90e\",\r\n          \"courseType\": \"Lecture & Tutorial\",\r\n          \"startTime\": \"08:30 AM\",\r\n          \"endTime\": \"11:00 AM\",\r\n          \"faculty\": \"65f96fc27b0c3964bee32fb5\",\r\n          \"location\": \"F501\"\r\n        },\r\n        {\r\n          \"course\": \"65f9c840fd8a20e77fb1e910\",\r\n          \"courseType\": \"Lecture & Tutorial\",\r\n          \"startTime\": \"11:30 AM\",\r\n          \"endTime\": \"01:30 PM\",\r\n          \"faculty\": \"65f99f101af8b59ab4b0232e\",\r\n          \"location\": \"A401\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"day\": \"Sunday\",\r\n      \"sessions\": [\r\n        {\r\n          \"course\": \"65f9c864fd8a20e77fb1e912\",\r\n          \"courseType\": \"Lecture & Tutorial\",\r\n          \"startTime\": \"08:30 AM\",\r\n          \"endTime\": \"11:30 AM\",\r\n          \"faculty\": \"65f96fc27b0c3964bee32fb5\",\r\n          \"location\": \"F502\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/timetableSessions/Y1.S2.WE.CS.1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"timetableSessions",
+						"Y1.S2.WE.CS.1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/timetableSessions/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/timetableSessions/Y1.S2.WE.CS.1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"timetableSessions",
+						"Y1.S2.WE.CS.1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/timetableSessions/Y1S1.WD.IT.02.02",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/timetableSessions/Y1S1.WD.IT.02.02",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"timetableSessions",
+						"Y1S1.WD.IT.02.02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/timetableSessions/student/IT21223456",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY5NmZiNTdiMGMzOTY0YmVlMzJmYjIiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTExNzAxMDYsImV4cCI6MTcxMTE3MzcwNn0.x4KE6Z_gC2l0sEQGrQxpPthGuL2y_Ssv3loTBU5mwBI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/timetableSessions/student/IT21091227",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"timetableSessions",
+						"student",
+						"IT21091227"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/timetableSessions/Y1S1.WD.IT.02.02",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/timetableSessions/Y1.S2.WE.CS.1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"timetableSessions",
+						"Y1.S2.WE.CS.1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/timetableSessions/Y1S1.WD.IT.02.02",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/timetableSessions/Y1S1.WD.IT.02.02",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"timetableSessions",
+						"Y1S1.WD.IT.02.02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/locationResources/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY5NmZiNTdiMGMzOTY0YmVlMzJmYjIiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTExNjA1MDYsImV4cCI6MTcxMTE2NDEwNn0.kzQJWKq9vmctbRk_-W0ImJAhtgebJwJHGNkp8iRjjak",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"detail\": [\r\n    {\r\n      \"locationType\": [\r\n        { \"lType\": \"Lecture Hall\" }      ],\r\n      \"resources\": [\r\n        { \"rType\": \"Projector\" }\r\n      ]\r\n    }\r\n  ],\r\n  \"booked\": false,\r\n  \"venue\": \"B502\",\r\n  \"date\": \"2024-02-25\",\r\n  \"startTime\": \"09:00 AM\",\r\n  \"endTime\": \"11:00 AM\",\r\n  \"faculty\": \"65f96fc27b0c3964bee32fb5\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/locationResources/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"locationResources",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/locationResources/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/locationResources/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"locationResources",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/locationResources/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/locationResources/65fb11b5448614a1cb699a52",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"locationResources",
+						"65fb11b5448614a1cb699a52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/locationResources/65fb11b5448614a1cb699a52",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/locationResources/65fb11b5448614a1cb699a52",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"locationResources",
+						"65fb11b5448614a1cb699a52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/enroll/student/65f9a0081af8b59ab4b02334",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZlZWRmZjcxM2E0M2Y5Nzk4Y2ZiNjkiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MTEyNzE2MjEsImV4cCI6MTcxMTI3NTIyMX0.vmRCVPNhOqs1V9BlxdUWJ8wapW-8dvC2kD-BSr3frj8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"studentId\": \"65f9a0081af8b59ab4b02334\",  // Assuming this is a valid student ID\r\n  \"courseId\": \"65f9c864fd8a20e77fb1e912\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/enroll/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"enroll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/enroll/student/65f9a0081af8b59ab4b02334",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/enroll/student/65f9a0081af8b59ab4b02334",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"enroll",
+						"student",
+						"65f9a0081af8b59ab4b02334"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/enroll/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/enroll/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"enroll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/enroll/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/enroll/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"enroll",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
